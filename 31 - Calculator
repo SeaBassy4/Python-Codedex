@@ -1,0 +1,26 @@
+def add(a,b):
+  addition = (a + b)
+  return addition
+
+def subtract(a, b):
+  subtraction = (a-b)
+  return subtraction
+
+def multiply(a,b):
+  multiplication = (a * b)
+  return multiplication
+
+def divide(a,b):
+  divition = (a / b)
+  return divition
+
+def exp(a, b):
+  exponential = (a ** b)
+  return exponential
+
+
+print(add(1,2))
+print(subtract(4,1))
+print(multiply(6,6))
+print(divide(10,2))
+print(exp(3,4))
