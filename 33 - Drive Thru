@@ -1,0 +1,22 @@
+foodItems = ['🍔 Cheeseburger','🍟 Fries','🥤 Soda','🍦 Ice Cream','🍪 Cookie']
+
+def get_item(x):
+  if(x >= len(foodItems)):
+    return "Not on the menu."
+  else:
+    return foodItems[x]
+
+def welcome():
+  print("Welcome to the Restaurant, here are our options:")
+  print("1: Cheeseburger.")
+  print("2: Fries.")
+  print("3: Soda.")
+  print("4: Ice Cream.")
+  print("5: Cookies.")
+  print("")
+  print("Please choose the corresponding item number.")
+
+
+print(welcome())
+option = int(input("What will you order? "))
+print(get_item(option - 1))
