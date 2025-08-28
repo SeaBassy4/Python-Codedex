@@ -1,0 +1,24 @@
+class Pokemon: 
+  def __init__(self, entry, name, types, description, is_caught):
+    self.entry = entry
+    self.name = name
+    self.types = types
+    self.description = description
+    self.is_caught = is_caught
+  
+  def speak(self):
+    print(self.name + " " + self.name + "!")
+  
+  def display_details(self):
+    print("Entry Number: " + str(self.entry))
+    print("Name: " + self.name)
+    print("Type: " + self.types)
+    print("Description: " + self.description)
+    if(self.is_caught):
+      print(self.name + " has already been caught!")
+    else:
+      print(self.name + " has not been caught yet!")
+
+  
+Pikachu = Pokemon(25, "Pikachu", "Electric", "It has small electric sacs on both of its cheeks. If threatened, it looses electric charge from the sacs.", True)
+Pikachu.display_details()
